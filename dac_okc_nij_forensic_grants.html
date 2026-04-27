@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIJ and closely related forensic/DNA federal grants to Oklahoma District Attorneys Council and City of Oklahoma City</title>
+<style>
+  :root {
+    --color-text-primary: #1F1F1C;
+    --color-text-secondary: #5F5E5A;
+    --color-text-tertiary: #888780;
+    --color-border-tertiary: #D3D1C7;
+    --color-background-primary: #FFFFFF;
+    --color-background-secondary: #F5F3EC;
+    --color-background-page: #FAF9F4;
+    --color-dac: #D85A30;
+    --color-okc: #888780;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-text-primary: #F1EFE8;
+      --color-text-secondary: #B4B2A9;
+      --color-text-tertiary: #888780;
+      --color-border-tertiary: #444441;
+      --color-background-primary: #1F1F1C;
+      --color-background-secondary: #2C2C2A;
+      --color-background-page: #161614;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 24px;
+    background: var(--color-background-page);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-lg);
+    padding: 28px 32px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 6px;
+    line-height: 1.3;
+    color: var(--color-text-primary);
+  }
+  .subtitle {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    margin: 0 0 20px;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 12px;
+    color: var(--color-text-primary);
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--color-text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  h3 .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  h3 .count {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    font-weight: 400;
+    margin-left: auto;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .stat {
+    background: var(--color-background-secondary);
+    border-radius: var(--border-radius-md);
+    padding: 14px 16px;
+  }
+  .stat-label {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    margin: 0 0 4px;
+  }
+  .stat-value {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--color-text-primary);
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: var(--color-text-secondary);
+  }
+  .legend span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .swatch {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  .chart-wrap {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    margin-bottom: 32px;
+  }
+  .awards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 28px;
+  }
+  @media (max-width: 700px) {
+    .awards-grid { grid-template-columns: 1fr; }
+  }
+  .awards-col h3 {
+    padding-bottom: 8px;
+    border-bottom: 0.5px solid var(--color-border-tertiary);
+    margin-bottom: 0;
+  }
+  .award {
+    padding: 12px 0;
+    border-bottom: 0.5px solid var(--color-border-tertiary);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 12px;
+    row-gap: 2px;
+    align-items: baseline;
+  }
+  .award:last-child { border-bottom: none; }
+  .award-fy {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    grid-column: 1 / -1;
+  }
+  .award-body {
+    min-width: 0;
+    grid-column: 1;
+  }
+  .award-title {
+    font-size: 13px;
+    line-height: 1.4;
+    color: var(--color-text-primary);
+    margin: 0 0 2px;
+  }
+  .award-num {
+    font-size: 11px;
+    font-family: var(--font-mono);
+    color: var(--color-text-tertiary);
+    margin: 0;
+    word-break: break-all;
+  }
+  .award-amt {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    white-space: nowrap;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .col-total {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 0.5px solid var(--color-border-tertiary);
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+  .col-total span:last-child { font-variant-numeric: tabular-nums; }
+  .sources {
+    background: var(--color-background-secondary);
+    border-radius: var(--border-radius-md);
+    padding: 16px 20px;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--color-text-secondary);
+    margin-bottom: 16px;
+  }
+  .sources h2 {
+    font-size: 13px;
+    margin: 0 0 8px;
+  }
+  .sources p {
+    margin: 0 0 8px;
+  }
+  .sources p:last-child { margin-bottom: 0; }
+  .sources strong {
+    color: var(--color-text-primary);
+    font-weight: 500;
+  }
+  .footnote {
+    border-top: 0.5px solid var(--color-border-tertiary);
+    padding-top: 14px;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.65;
+    color: var(--color-text-secondary);
+  }
+  .footnote strong {
+    color: var(--color-text-primary);
+    font-weight: 500;
+  }
+  .footnote p { margin: 0 0 8px; }
+  .footnote p:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>NIJ and closely related forensic/DNA federal grants to Oklahoma District Attorneys Council and City of Oklahoma City</h1>
+  <p class="subtitle">Fiscal years 2003–2023</p>
+
+  <div class="stats">
+    <div class="stat"><p class="stat-label">Total awards</p><p class="stat-value">25</p></div>
+    <div class="stat"><p class="stat-label">Total funding</p><p class="stat-value">$4.78M</p></div>
+    <div class="stat"><p class="stat-label">DAC</p><p class="stat-value">$2.72M</p></div>
+    <div class="stat"><p class="stat-label">City of OKC</p><p class="stat-value">$2.06M</p></div>
+  </div>
+
+  <h2>Awards by fiscal year</h2>
+  <div class="legend">
+    <span><span class="swatch" style="background:#D85A30;"></span>Oklahoma District Attorneys Council</span>
+    <span><span class="swatch" style="background:#888780;"></span>City of Oklahoma City</span>
+  </div>
+  <div class="chart-wrap">
+    <canvas id="yearChart" role="img" aria-label="Stacked bar chart showing NIJ and successor forensic grants by fiscal year from 2003 to 2023, broken down by the Oklahoma District Attorneys Council and the City of Oklahoma City."></canvas>
+  </div>
+
+  <h2>Individual awards</h2>
+  <div class="awards-grid">
+    <div class="awards-col">
+      <h3><span class="dot" style="background:#D85A30;"></span>Oklahoma District Attorneys Council<span class="count">16 awards</span></h3>
+      <div id="dac-list"></div>
+      <div class="col-total"><span>Total</span><span>$2,715,290</span></div>
+    </div>
+    <div class="awards-col">
+      <h3><span class="dot" style="background:#888780;"></span>City of Oklahoma City<span class="count">9 awards</span></h3>
+      <div id="okc-list"></div>
+      <div class="col-total"><span>Total</span><span>$2,061,378</span></div>
+    </div>
+  </div>
+
+  <div class="sources">
+    <h2>Funding sources</h2>
+    <p><strong>Paul Coverdell Forensic Science Improvement Grants Program</strong> — annual NIJ grants to the Oklahoma District Attorneys Council as the designated state administering agency. Source for all DAC awards on this chart.</p>
+    <p><strong>NIJ DNA Backlog Reduction / DNA Capacity Enhancement Program</strong> — annual formula and competitive grants administered by the National Institute of Justice through fiscal year 2015. Source for the City of Oklahoma City pre-2016 awards.</p>
+    <p><strong>BJA DNA Capacity Enhancement for Backlog Reduction (CEBR) Program</strong> — successor program to the NIJ DNA Backlog Reduction grants beginning in fiscal year 2016, administered by the Bureau of Justice Assistance. Source for all post-2015 City of Oklahoma City awards on this chart.</p>
+  </div>
+
+  <div class="footnote">
+    <p><strong>Sources.</strong> Award listings retrieved from the National Institute of Justice (nij.ojp.gov) and Bureau of Justice Assistance (bja.ojp.gov) award databases, including individual award detail pages on those domains.</p>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+  const fmt = (v) => v >= 1e6 ? '$' + (v/1e6).toFixed(2) + 'M' : '$' + (v/1e3).toFixed(0) + 'K';
+  const fmtFull = (v) => '$' + v.toLocaleString();
+
+  // Per-award data
+  const dacAwards = [
+    [2003, "2003-DN-BX-1040", "Coverdell NFSIA", 107312],
+    [2003, "2003-DN-BX-0073", "FY2003 NFSIA Grant", 42484],
+    [2003, "2003-DN-BX-0069", "FY2003 Coverdell NFSIA: Discretionary Grant", 240104],
+    [2003, "2003-DN-BX-0040", "Paul Coverdell NFSIA", 39276],
+    [2004, "2004-DN-BX-0165", "FY2004 NFSIA Grant", 80239],
+    [2005, "2005-DN-BX-0105", "2005 Paul Coverdell Forensic Science Improvement", 114282],
+    [2006, "2006-DN-BX-0071", "Paul Coverdell Forensic Science Improvement", 216005],
+    [2007, "2007-CD-BX-0079", "2007 Coverdell Forensic Science Improvement", 230584],
+    [2008, "2008-CD-BX-0024", "FY2008 Coverdell Statewide Forensic Science Improvement", 134281],
+    [2009, "2009-CD-BX-0074", "2009 Coverdell Forensic Science Improvement", 189852],
+    [2010, "2010-CD-BX-0002", "2010 Paul Coverdell Forensic Science Improvement", 442592],
+    [2011, "2011-CD-BX-0028", "2011 Coverdell Forensic Science Improvement Project", 227694],
+    [2012, "2012-CD-BX-0004", "2012 Coverdell Forensic Science Improvement Project", 86772],
+    [2013, "2013-CD-BX-0002", "2013 Coverdell Forensic Science Improvement Program", 215164],
+    [2014, "2014-CD-BX-0048", "2014 Oklahoma Forensic Science Improvement Grant", 256627],
+    [2015, "2015-CD-BX-0004", "2015 Oklahoma Forensic Science Improvement Grant", 92022],
+  ];
+
+  const okcAwards = [
+    [2005, "2005-DA-BX-K025", "DNA Capacity Enhancement FY2005 — OCPD Lab Services Division", 87332],
+    [2011, "2011-DN-BX-K405", "FY2011 Forensic DNA Backlog Reduction — Oklahoma City", 306000],
+    [2012, "2012-DN-BX-0026", "FY2012 Forensic DNA Backlog Reduction — Oklahoma City", 187000],
+    [2013, "2013-DN-BX-0055", "FY2013 Forensic DNA Backlog Reduction — Oklahoma City", 185000],
+    [2015, "2015-DN-BX-0052", "FY2015 Forensic DNA Backlog Reduction — Oklahoma City", 116000],
+    [2019, "2019-DN-BX-0098", "FY2019 DNA Capacity Enhancement & Backlog Reduction — OCPD", 250000],
+    [2020, "2020-DN-BX-0102", "FY2020 DNA Capacity Enhancement for Backlog Reduction — OCPD", 250000],
+    [2022, "15PBJA-22-GG-01710", "FY2022 DNA Capacity Enhancement for Backlog Reduction — OCPD", 324612],
+    [2023, "15PBJA-23-GG-01349", "FY2023 DNA Capacity Enhancement for Backlog Reduction — OCPD", 355434],
+  ];
+
+  function renderAwards(containerId, awards) {
+    const c = document.getElementById(containerId);
+    awards.forEach(([fy, num, title, amt]) => {
+      const el = document.createElement('div');
+      el.className = 'award';
+      el.innerHTML = `
+        <span class="award-fy">FY${fy}</span>
+        <div class="award-body">
+          <p class="award-title">${title}</p>
+          <p class="award-num">${num}</p>
+        </div>
+        <span class="award-amt">${fmtFull(amt)}</span>
+      `;
+      c.appendChild(el);
+    });
+  }
+  renderAwards('dac-list', dacAwards);
+  renderAwards('okc-list', okcAwards);
+
+  // Build the stacked bar chart data (DAC and OKC only)
+  const years = [2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023];
+
+  function sumByYear(awards) {
+    const m = Object.fromEntries(years.map(y => [y, 0]));
+    awards.forEach(([fy, , , amt]) => { m[fy] = (m[fy] || 0) + amt; });
+    return years.map(y => m[y] || 0);
+  }
+
+  const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const axisColor = isDark ? '#B4B2A9' : '#888780';
+  const gridColor = isDark ? 'rgba(180,178,169,0.15)' : 'rgba(136,135,128,0.15)';
+
+  new Chart(document.getElementById('yearChart'), {
+    type: 'bar',
+    data: {
+      labels: years,
+      datasets: [
+        { label: 'Oklahoma District Attorneys Council', data: sumByYear(dacAwards), backgroundColor: '#D85A30', borderWidth: 0 },
+        { label: 'City of Oklahoma City',               data: sumByYear(okcAwards), backgroundColor: '#888780', borderWidth: 0 }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: { label: (ctx) => ctx.dataset.label + ': ' + fmt(ctx.parsed.y) }
+        }
+      },
+      scales: {
+        x: {
+          stacked: true,
+          ticks: {
+            autoSkip: false,
+            minRotation: 60,
+            maxRotation: 60,
+            color: axisColor,
+            font: { size: 10 }
+          },
+          grid: { display: false }
+        },
+        y: {
+          stacked: true,
+          ticks: { callback: (v) => fmt(v), color: axisColor },
+          grid: { color: gridColor }
+        }
+      }
+    }
+  });
+</script>
+</body>
+</html>
